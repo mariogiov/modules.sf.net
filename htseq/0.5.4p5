@@ -9,19 +9,19 @@ getCluster
 set components [ file split [ module-info name ] ]
 set version [ lindex $components 1 ]
 
-set     modroot          /proj/a2010002/nobackup/sw/mf/bioinfo-tools/samtools/$version
+set     modroot          /proj/a2010002/nobackup/sw/mf/bioinfo-tools/htseq/$version
 
 proc ModulesHelp { } {
         global version modroot
 
-        puts stderr "\tsamtools - use samtools $version"
+        puts stderr "\thtseq - use htseq $version"
         puts stderr "\n\tVersion $version\n"
 }
 
-module-whatis   "Loads samtools environment."
+module-whatis   "Loads htseq environment."
 
 # Only one version at a time
-conflict samtools
+conflict htseq
 
 #Log loading to syslog
 logToSyslog
