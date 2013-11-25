@@ -1,6 +1,6 @@
 #%Module1.0#####################################################################
 ##
-## fastqc modulefile
+## samtools modulefile
 ##
 
 source /sw/mf/common/includes/functions.tcl
